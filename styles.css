@@ -1059,11 +1059,11 @@ img { max-width: 100%; display: block; }
 
 /* lang-switch link in header */
 .lang-switch {
-  font-size: 13px;
+  font-size: 8px;
   font-weight: 600;
   color: var(--text-muted);
   text-decoration: none;
-  padding: 6px 12px;
+  padding: 3px 12px;
   border-radius: var(--radius-sm);
   border: 1.5px solid #e2e8f0;
   white-space: nowrap;
