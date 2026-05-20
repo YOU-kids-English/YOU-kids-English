@@ -1057,7 +1057,43 @@ img { max-width: 100%; display: block; }
   .contact-wrapper { grid-template-columns: 1fr; }
 }
 
+/* lang-switch link in header */
+.lang-switch {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  border: 1.5px solid #e2e8f0;
+  white-space: nowrap;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  flex-shrink: 0;
+}
+.lang-switch:hover {
+  color: var(--green);
+  border-color: var(--green);
+  background: var(--green-light);
+}
+
+@media (max-width: 768px) {
+  .logo-sub { display: none; }
+}
+
 @media (max-width: 640px) {
+  .header-inner {
+    padding: 0 16px;
+    gap: 12px;
+  }
+  .logo-sub { display: none; }
+  .logo-you { font-size: 18px; }
+  .logo-kids { font-size: 16px; }
+
+  .lang-switch {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
   .nav-toggle { display: flex; }
   .nav {
     display: none;
