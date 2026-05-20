@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOU-kids English School — Midorino Campus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-you">YOU</span><span class="logo-kids">-kids</span>
+        <span class="logo-sub">English — Midorino Campus</span>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <ul class="menu-group">
+          <li class="menu-item"><a href="#about">About Us</a></li>
+          <li class="menu-item"><a href="#stories">Courses</a></li>
+          <li class="menu-item"><a href="#calendar">Schedule</a></li>
+          <li class="menu-item"><a href="#teachers">Teachers</a></li>
+          <li class="menu-item"><a href="#pricing">Pricing</a></li>
+          <li class="menu-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="index.html" class="lang-switch">🌐 日本語</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="bubble b1"></div>
+      <div class="bubble b2"></div>
+      <div class="bubble b3"></div>
+      <div class="bubble b4"></div>
+      <div class="bubble b5"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🌟 Free Trial Lessons Now Available!</div>
+      <h1 class="hero-title">
+        Learn English through<br><em>Aesop's Fables</em>.<br><em>Wisdom &amp; language</em> for life.
+      </h1>
+      <p class="hero-desc">
+        Learning language is a chance to nurture the heart and enrich your life.<br>
+        Join our native English teacher in Tsukuba's Midorino neighborhood.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary">Apply for a Free Trial</a>
+        <a href="#about" class="btn btn-outline">Learn More</a>
+      </div>
+    </div>
+
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#ffffff"/>
+      </svg>
+    </div>
+  </section>
+
+  <!-- Features Bar -->
+  <section class="features-bar">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-item">
+          <span class="feature-icon">🌍</span>
+          <div>
+            <strong>Native Teacher</strong>
+            <p>Real, everyday English conversation</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">📖</span>
+          <div>
+            <strong>Aesop's Fables Curriculum</strong>
+            <p>English and wisdom learned together</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <span class="feature-icon">🎤</span>
+          <div>
+            <strong>Speech &amp; Expression</strong>
+            <p>Confidence to share your own ideas</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main>
+
+    <!-- About -->
+    <section id="about" class="section section-about">
+      <div class="container">
+        <div class="section-label">About Us</div>
+        <h2 class="section-title">"Words to treasure"<br>— wisdom for the heart</h2>
+        <p class="section-subtitle">
+          Aesop's Fables nurture your child's language and character!<br>
+          Using beloved classics as our textbook, we build balanced skills from daily conversation to confident speech.
+        </p>
+        <div class="about-cards">
+          <div class="about-card">
+            <div class="about-card-icon">📖</div>
+            <h3>Learning through Aesop's Fables</h3>
+            <p>Using world-famous stories as our teaching material, we develop English skills and life wisdom together — making lessons fun and sustainable.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">💬</div>
+            <h3>Real Everyday Conversation</h3>
+            <p>In an environment with a native teacher, students develop practical English — from daily conversation to expressing their own opinions.</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">🌱</div>
+            <h3>Growing Heart &amp; Character</h3>
+            <p>Learning language is a chance to grow the heart and soul. Through English, we also cultivate empathy, honesty, and resilience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="stories" class="section section-stories">
+      <div class="container">
+        <div class="section-label">Courses</div>
+        <h2 class="section-title">Our Courses</h2>
+        <p class="section-subtitle">Two courses designed to match your child's level.</p>
+        <div class="courses-grid">
+
+          <div class="course-card">
+            <div class="course-header course-header-beginner">
+              <div class="course-icon">🌱</div>
+              <div>
+                <div class="course-tag">Beginners Course</div>
+                <div class="course-price-small">¥7,500 / month　· Once a week · 90 min</div>
+              </div>
+            </div>
+            <div class="course-body">
+              <p class="course-target">🎯 For: Complete beginners or those revisiting the basics</p>
+              <h4>What you'll learn</h4>
+              <ul class="course-list">
+                <li>Start gently from the alphabet and phonics</li>
+                <li>Simple words and phrases through Aesop's Fables</li>
+                <li>Basic everyday conversation with a native teacher</li>
+                <li>Fun, activity-based lessons using pictures and movement</li>
+                <li>Balanced practice in reading, listening, and speaking</li>
+              </ul>
+              <div class="course-goal">
+                <span>🏁 Goal</span>Confident everyday conversation
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <div class="course-header course-header-advance">
+              <div class="course-icon">🚀</div>
+              <div>
+                <div class="course-tag">Advanced Course</div>
+                <div class="course-price-small">¥10,000 / month　· Once a week · 120 min</div>
+              </div>
+            </div>
+            <div class="course-body">
+              <p class="course-target">🎯 For: Students with basic conversational skills ready to go further</p>
+              <h4>What you'll learn</h4>
+              <ul class="course-list">
+                <li>In-depth reading and discussion of Aesop's Fables</li>
+                <li>Speech practice — expressing opinions in English</li>
+                <li>Free conversation and debate with a native teacher</li>
+                <li>Introduction to basic English writing (composition)</li>
+                <li>Support for Eiken and school English exams</li>
+              </ul>
+              <div class="course-goal">
+                <span>🏁 Goal</span>Fluent expression of your own ideas
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <p class="courses-note">※ Enrollment fee: ¥5,000 (first time only) · Free trial lessons available anytime</p>
+      </div>
+    </section>
+
+    <!-- Calendar -->
+    <section id="calendar" class="section section-calendar">
+      <div class="container">
+        <div class="section-label">Schedule</div>
+        <h2 class="section-title">Lesson Schedule</h2>
+        <p class="section-subtitle">Check upcoming lessons and events below.</p>
+        <div class="calendar-wrapper">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=you.kids.english%40gmail.com&ctz=Asia%2FTokyo&hl=en&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=1&showCalendars=0&mode=MONTH"
+            style="border: 0"
+            width="100%"
+            height="600"
+            frameborder="0"
+            scrolling="no"
+            title="Lesson Schedule"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Teachers -->
+    <section id="teachers" class="section section-teachers">
+      <div class="container">
+        <div class="section-label">Our Teachers</div>
+        <h2 class="section-title">Meet Our Teacher</h2>
+        <p class="section-subtitle">Our experienced native teacher is here to fully support your child's growth.</p>
+        <div class="teachers-grid">
+          <div class="teacher-card">
+            <div class="teacher-avatar" style="background: #ffe0b2;">🧑‍🏫</div>
+            <h3>Tasfia Nuzhat Anny</h3>
+            <div class="teacher-tag">Native English Teacher</div>
+            <p>Originally from Bangladesh. Specializes in making lessons fun and engaging. Guides students to grow in both English and character through Aesop's Fables.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section section-pricing">
+      <div class="container">
+        <div class="section-label">Pricing</div>
+        <h2 class="section-title">Tuition Fees</h2>
+        <p class="section-subtitle">Start with a free trial lesson — no pressure, no commitment!</p>
+        <div class="pricing-single">
+          <div class="pricing-card">
+            <div class="pricing-plan">Beginners Course</div>
+            <div class="pricing-price">¥7,500<span>/mo</span></div>
+            <ul class="pricing-list">
+              <li>✅ Once a week · 90-min lesson</li>
+              <li>✅ Textbook included</li>
+              <li>✅ Goal: confident everyday conversation</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-full">Apply for Trial</a>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-plan">Advanced Course</div>
+            <div class="pricing-price">¥10,000<span>/mo</span></div>
+            <ul class="pricing-list">
+              <li>✅ Once a week · 120-min lesson</li>
+              <li>✅ Textbook included</li>
+              <li>✅ Goal: fluent self-expression</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary btn-full">Apply for Trial</a>
+          </div>
+        </div>
+        <p class="pricing-note">※ Enrollment fee: ¥5,000 (first time only)　※ Free trial lessons available anytime</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <div class="section-label">Contact</div>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">Questions or ready to book a free trial? We'd love to hear from you.</p>
+        <div class="contact-wrapper">
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Address</strong>
+                <p>〒305-0881<br>2-chome-41-9 Midorino, Tsukuba<br>EMBLEM Room 103</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <p>029-886-9235</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-icon">🕐</span>
+              <div>
+                <strong>Hours</strong>
+                <p>Friday: from 16:00<br>Saturday: from 11:00</p>
+              </div>
+            </div>
+            <div class="contact-special">
+              🌟 <strong>Free trial lessons available!</strong><br>Feel free to reach out anytime.
+            </div>
+          </div>
+          <form class="contact-form" action="https://formspree.io/f/maqkqgan" method="POST">
+            <div class="form-group">
+              <label>Inquiry Type</label>
+              <select name="Inquiry Type">
+                <option value="">Please select</option>
+                <option>Book a Free Trial</option>
+                <option>About Lesson Content</option>
+                <option>About Pricing</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" name="Name" placeholder="Jane Smith" required>
+            </div>
+            <div class="form-group">
+              <label>Email Address</label>
+              <input type="email" name="email" placeholder="jane@example.com" required>
+            </div>
+            <div class="form-group">
+              <label>Child's Grade / Age Group</label>
+              <select name="Grade">
+                <option value="">Please select</option>
+                <option>Kindergarten / Preschool</option>
+                <option>Elementary (Grades 1–3)</option>
+                <option>Elementary (Grades 4–6)</option>
+                <option>Junior High School</option>
+                <option>High School / Adult</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Message (optional)</label>
+              <textarea name="Message" placeholder="Any questions or preferred trial dates..." rows="4"></textarea>
+            </div>
+            <div class="form-group form-group-privacy">
+              <div class="privacy-check-row">
+                <input type="checkbox" id="privacyCheck" name="Privacy Agreement" value="Agreed" required>
+                <label for="privacyCheck" class="privacy-label">
+                  Your personal information will be used solely to respond to your inquiry and for communication from our school. It will not be shared with third parties.
+                  I agree to the <a href="#" class="privacy-link" id="privacyLink">Privacy Policy</a>. (Required)
+                </label>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full btn-large">Send Message →</button>
+            <p class="form-redirect-note">※ After submitting, you will be briefly redirected to "Formspree," a secure third-party form service. Your information is encrypted during transmission.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Privacy Policy Modal -->
+  <div class="modal-overlay" id="privacyModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 class="modal-title">Privacy Policy</h2>
+        <button class="modal-close" id="modalClose" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="privacy-item">
+          <h3>Information We Collect</h3>
+          <p>Your name, email address, your child's grade, and the nature of your inquiry.</p>
+        </div>
+        <div class="privacy-item">
+          <h3>Purpose of Use</h3>
+          <p>Information is used solely to respond to inquiries, provide trial lesson details, and communicate about our school.</p>
+        </div>
+        <div class="privacy-item">
+          <h3>Third-Party Sharing</h3>
+          <p>We will not share your personal information with any third party without your consent, except as required by law.</p>
+        </div>
+        <div class="privacy-item">
+          <h3>Data Management</h3>
+          <p>We handle all personal information with care and take appropriate measures to prevent unauthorized access, loss, or leakage.</p>
+        </div>
+        <div class="privacy-item">
+          <h3>Contact</h3>
+          <p>To request access to, correction of, or deletion of your personal information, please contact us by phone (029-886-9235) or email.</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="modalCloseBtn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-you">YOU</span><span class="logo-kids">-kids</span>
+          <span class="footer-tagline">English — Midorino Campus</span>
+        </div>
+        <nav class="footer-nav">
+          <a href="#about">About Us</a>
+          <a href="#stories">Courses</a>
+          <a href="#teachers">Teachers</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 YOU-kids English — Midorino Campus. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
