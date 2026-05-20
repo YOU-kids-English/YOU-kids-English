@@ -515,12 +515,17 @@ img { max-width: 100%; display: block; }
   align-items: start;
 }
 .pricing-single {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
 }
-.pricing-single .pricing-card {
-  width: 100%;
-  max-width: 400px;
+
+@media (max-width: 640px) {
+  .pricing-single {
+    grid-template-columns: 1fr;
+  }
 }
 .pricing-card {
   background: white;
@@ -591,6 +596,79 @@ img { max-width: 100%; display: block; }
   color: var(--text-muted);
   text-align: center;
   line-height: 2;
+}
+
+/* ===========================
+   CALENDAR
+=========================== */
+.section-calendar { background: white; }
+
+.calendar-wrapper {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  border: 1px solid #f0f4f8;
+}
+
+.calendar-wrapper iframe {
+  display: block;
+  width: 100%;
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+.calendar-note {
+  background: var(--green-light);
+  padding: 14px 20px;
+  font-size: 13px;
+  color: var(--green-dark);
+  line-height: 1.8;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+}
+
+/* ===========================
+   STORIES
+=========================== */
+.section-stories { background: var(--yellow-light); }
+
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.story-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  padding: 32px 28px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(255, 201, 60, 0.3);
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.story-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+.story-icon {
+  font-size: 36px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.story-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+.story-card p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .stories-grid { grid-template-columns: 1fr; }
 }
 
 /* ===========================
