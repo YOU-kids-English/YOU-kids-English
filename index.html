@@ -292,13 +292,58 @@
               <label>メッセージ（任意）</label>
               <textarea name="メッセージ" placeholder="ご質問や体験希望日をご記入ください..." rows="4"></textarea>
             </div>
+            <div class="form-group form-group-privacy">
+              <div class="privacy-check-row">
+                <input type="checkbox" id="privacyCheck" name="個人情報への同意" value="同意する" required>
+                <label for="privacyCheck" class="privacy-label">
+                  入力いただいた個人情報は、お問い合わせへの返答および当教室からのご連絡にのみ使用し、第三者への提供は行いません。
+                  <a href="#" class="privacy-link" id="privacyLink">個人情報の取り扱いについて</a>に同意する（必須）
+                </label>
+              </div>
+            </div>
             <button type="submit" class="btn btn-primary btn-full btn-large">送信する →</button>
+            <p class="form-redirect-note">※ 送信ボタンを押すと、フォーム送信サービス「Formspree」のページに移動します。個人情報は暗号化されて送信されます。</p>
           </form>
         </div>
       </div>
     </section>
 
   </main>
+
+  <!-- 個人情報ポリシー モーダル -->
+  <div class="modal-overlay" id="privacyModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 class="modal-title">個人情報の取り扱いについて</h2>
+        <button class="modal-close" id="modalClose" aria-label="閉じる">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="privacy-item">
+          <h3>収集する情報</h3>
+          <p>お名前、メールアドレス、お子様の学年、お問い合わせ内容</p>
+        </div>
+        <div class="privacy-item">
+          <h3>利用目的</h3>
+          <p>お問い合わせへの返答、体験レッスンのご案内、当教室に関するご連絡のみに使用します。</p>
+        </div>
+        <div class="privacy-item">
+          <h3>第三者への提供</h3>
+          <p>法令に基づく場合を除き、お客様の同意なく第三者に個人情報を提供することはありません。</p>
+        </div>
+        <div class="privacy-item">
+          <h3>個人情報の管理</h3>
+          <p>収集した個人情報は適切に管理し、不正アクセス・紛失・漏洩の防止に努めます。</p>
+        </div>
+        <div class="privacy-item">
+          <h3>お問い合わせ</h3>
+          <p>個人情報の開示・訂正・削除をご希望の場合は、電話（029-886-9235）またはメールにてご連絡ください。</p>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-primary" id="modalCloseBtn">閉じる</button>
+      </div>
+    </div>
+  </div>
 
   <!-- フッター -->
   <footer class="footer">

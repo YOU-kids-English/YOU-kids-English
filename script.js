@@ -62,3 +62,26 @@ window.addEventListener('DOMContentLoaded', () => {
     observer.observe(card);
   });
 });
+
+// 個人情報ポリシー モーダル
+const privacyLink = document.getElementById('privacyLink');
+const privacyModal = document.getElementById('privacyModal');
+const modalClose = document.getElementById('modalClose');
+const modalCloseBtn = document.getElementById('modalCloseBtn');
+
+function openModal(e) {
+  e.preventDefault();
+  privacyModal.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeModal() {
+  privacyModal.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+if (privacyLink) privacyLink.addEventListener('click', openModal);
+if (modalClose) modalClose.addEventListener('click', closeModal);
+if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
+if (privacyModal) privacyModal.addEventListener('click', (e) => {
+  if (e.target === privacyModal) closeModal();
+});
