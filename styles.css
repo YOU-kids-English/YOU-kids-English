@@ -62,7 +62,7 @@ img { max-width: 100%; display: block; }
 .header-inner {
   max-width: 1080px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 12px;
   height: 100%;
   display: flex;
   align-items: center;
