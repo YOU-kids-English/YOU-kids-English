@@ -886,6 +886,94 @@ img { max-width: 100%; display: block; }
 }
 
 /* ===========================
+   ACCESS
+=========================== */
+.section-access { background: var(--bg-soft); }
+
+.access-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 40px;
+  align-items: stretch;
+}
+
+.access-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.access-info-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: flex-start;
+}
+.access-info-item strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+.access-info-item p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.access-map-btn {
+  display: inline-flex;
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.access-map {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  min-height: 380px;
+  border: 1px solid #f0f4f8;
+}
+.access-map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 380px;
+}
+
+/* お問い合わせ：住所情報を除いたシンプルな左カラム */
+.contact-special-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-note-box {
+  background: var(--blue-light);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #1a4a7a;
+  line-height: 1.7;
+}
+
+/* tel リンク */
+.tel-link {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+.tel-link:hover {
+  color: var(--green);
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .access-wrapper { grid-template-columns: 1fr; }
+  .access-map { min-height: 300px; }
+  .access-map iframe { min-height: 300px; }
+}
+
+/* ===========================
    PRIVACY POLICY
 =========================== */
 .section-privacy { background: var(--bg-soft); }
@@ -1059,11 +1147,11 @@ img { max-width: 100%; display: block; }
 
 /* lang-switch link in header */
 .lang-switch {
-  font-size: 8px;
+  font-size: 13px;
   font-weight: 600;
   color: var(--text-muted);
   text-decoration: none;
-  padding: 3px 12px;
+  padding: 6px 12px;
   border-radius: var(--radius-sm);
   border: 1.5px solid #e2e8f0;
   white-space: nowrap;
